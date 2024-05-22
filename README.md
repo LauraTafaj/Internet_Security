@@ -10,15 +10,28 @@ This application provides a secure way to transfer files over the internet using
 - Client-server architecture
 - Graphical User Interface (GUI) with Tkinter
 
+## Components
+
+### Server
+- **config.py:** Configuration settings such as server IP, port, buffer size, and encryption key.
+- **encryption.py:** Encryption and hashing functionalities using the AES algorithm and SHA-256 hashing.
+- **server.py:** Main server application responsible for receiving files securely.
+
+### Client
+- **config.py:** Configuration settings for the client application.
+- **encryption.py:** Encryption and hashing functionalities for the client side.
+- **client.py:** Main client application responsible for sending files securely.
+
+## Usage
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies using `pip install -r requirements.txt`.
+3. Start the server by running `python server.py`.
+4. Start the client by running `python client.py`.
+5. Use the user interface to select files and send/receive them securely.
+
 ## Requirements
 
-- Python 3.8+
-- `cryptography` library
-- `tkinter` library (usually included with Python installations)
-
-## Setup
-
-1. Install dependencies:
-
-```sh
-pip install -r requirements.txt
+- Python 3.x
+- tkinter (for GUI)
+- cryptography (for encryption)
